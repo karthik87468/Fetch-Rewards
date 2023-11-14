@@ -20,7 +20,7 @@ struct MealItemCellView: View {
                             ImageLoaderView(urlString: imageUrl)
                         }.cornerRadius(20)
                         Text(dessertName)
-                            .font(.custom("HelveticaNeue-Bold", size: 20))
+                            .font(.custom(Fonts.HelveticaNeueBold.rawValue, size: 20))
                             .lineLimit(1)
                             .foregroundColor(.white)
                             .frame(maxWidth: .infinity, alignment: .leading)

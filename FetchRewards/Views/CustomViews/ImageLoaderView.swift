@@ -18,7 +18,3 @@ struct ImageLoaderView: View {
             .resizable().aspectRatio(contentMode: .fit)
     }
 }
-
-#Preview {
-    ImageLoaderView(urlString: "https://www.themealdb.com//images//media//meals//adxcbq1619787919.jpg")
-}

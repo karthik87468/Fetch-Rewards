@@ -59,8 +59,8 @@ struct IngredientsView: View {
     var body: some View {
         VStack {
             Divider()
-            Text(ingredient.name).frame(maxWidth: .infinity, alignment: .leading) .font(.custom("HelveticaNeue-Bold", size: 15)).padding(.leading, 35).padding(.top,10)
-            Text(ingredient.quantity).frame(maxWidth: .infinity, alignment: .leading) .font(.custom("HelveticaNeue-Regular", size: 15)).padding(.leading, 35).padding(.top,10)
+            Text(ingredient.name).frame(maxWidth: .infinity, alignment: .leading) .font(.custom(Fonts.HelveticaNeueBold.rawValue, size: 15)).padding(.leading, 35).padding(.top,10)
+            Text(ingredient.quantity).frame(maxWidth: .infinity, alignment: .leading) .font(.custom(Fonts.HelveticaNeueRegular.rawValue, size: 15)).padding(.leading, 35).padding(.top,10)
             
         }
     }

@@ -12,3 +12,8 @@ enum Constants: String {
     case area = "Area : "
     case instructions = "Instructions :"
 }
+
+enum Fonts: String {
+    case HelveticaNeueBold = "HelveticaNeue-Bold"
+    case HelveticaNeueRegular = "HelveticaNeue-Regular"
+}
