@@ -61,7 +61,7 @@ struct MealDetailsModel: Decodable {
               let ingredient = try container.decodeIfPresent(String.self, forKey: ingredientkey),
               !ingredient.isEmpty,
               let key = CodingKeys(rawValue: "strMeasure\(i)"),
-              let measurement = try container.decodeIfPresent(String.self, forKey: key)
+              let measurement = try container.decodeIfPresent(String.self, forKey: key), !measurement.isEmpty
             {
                ingredientsArray.append(.init(name: ingredient, quantity: measurement))
            }
