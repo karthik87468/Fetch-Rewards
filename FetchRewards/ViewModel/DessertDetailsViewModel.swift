@@ -8,7 +8,7 @@ import UIKit
 import Combine
 
 class DessertDetailsViewModel: ObservableObject {
-    private var cancellables: Set<AnyCancellable> = []
+    var cancellables: Set<AnyCancellable> = []
     @Published var dessertDetails: MealDetailsModel?
 
     func fetchMealDetails(dessertId: String) {
@@ -31,7 +31,7 @@ class DessertDetailsViewModel: ObservableObject {
             .store(in: &cancellables)
     }
 
-    private func makeMealDetailsURL(dessertId: String) -> URL? {
+    func makeMealDetailsURL(dessertId: String) -> URL? {
         let endPoint = FetchEndPoint.getMealDetails(mealID: dessertId)
         return NetworkModel.getURL(for: endPoint)
     }

@@ -8,7 +8,7 @@ import UIKit
 import Combine
 class MealsDataViewModel: ObservableObject {
     @Published var dessertArray: [MealsModel] = []
-    private var cancellables: Set<AnyCancellable> = []
+     var cancellables: Set<AnyCancellable> = []
     
     func fetchMealsData() {
         guard let url = makeMealsDataURL() else { return }
@@ -30,7 +30,7 @@ class MealsDataViewModel: ObservableObject {
             .store(in: &cancellables)
     }
     
-    private func makeMealsDataURL() -> URL? {
+     func makeMealsDataURL() -> URL? {
         let endPoint = FetchEndPoint.getMeals(dessertType: .dessert)
         return NetworkModel.getURL(for: endPoint)
     }

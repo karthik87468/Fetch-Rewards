@@ -35,6 +35,8 @@
 		25755C6C2B05161000B2E0CB /* DessertDetailsMock.json in Resources */ = {isa = PBXBuildFile; fileRef = 25755C6B2B05161000B2E0CB /* DessertDetailsMock.json */; };
 		25755C6E2B0516B600B2E0CB /* DessertDetailsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25755C6D2B0516B600B2E0CB /* DessertDetailsViewModelTests.swift */; };
 		25755C702B05176900B2E0CB /* SessionMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25755C6F2B05176900B2E0CB /* SessionMock.swift */; };
+		25755C732B051A8300B2E0CB /* MealsDataViewModelMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25755C722B051A8300B2E0CB /* MealsDataViewModelMock.swift */; };
+		25755C752B051ED400B2E0CB /* DessertDetailsViewModelMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25755C742B051ED400B2E0CB /* DessertDetailsViewModelMock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +87,8 @@
 		25755C6B2B05161000B2E0CB /* DessertDetailsMock.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DessertDetailsMock.json; sourceTree = "<group>"; };
 		25755C6D2B0516B600B2E0CB /* DessertDetailsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertDetailsViewModelTests.swift; sourceTree = "<group>"; };
 		25755C6F2B05176900B2E0CB /* SessionMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionMock.swift; sourceTree = "<group>"; };
+		25755C722B051A8300B2E0CB /* MealsDataViewModelMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealsDataViewModelMock.swift; sourceTree = "<group>"; };
+		25755C742B051ED400B2E0CB /* DessertDetailsViewModelMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertDetailsViewModelMock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +163,7 @@
 		25755BD72B02D1F600B2E0CB /* FetchRewardsTests */ = {
 			isa = PBXGroup;
 			children = (
+				25755C712B051A6B00B2E0CB /* MockViewModels */,
 				25755C662B05122900B2E0CB /* NetWorkMock */,
 				25755C5C2B04E33000B2E0CB /* MockResponse */,
 				25755BD82B02D1F600B2E0CB /* FetchRewardsTests.swift */,
@@ -282,6 +287,15 @@
 				25755C6F2B05176900B2E0CB /* SessionMock.swift */,
 			);
 			path = NetWorkMock;
+			sourceTree = "<group>";
+		};
+		25755C712B051A6B00B2E0CB /* MockViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				25755C722B051A8300B2E0CB /* MealsDataViewModelMock.swift */,
+				25755C742B051ED400B2E0CB /* DessertDetailsViewModelMock.swift */,
+			);
+			path = MockViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -442,8 +456,10 @@
 				25755BD92B02D1F600B2E0CB /* FetchRewardsTests.swift in Sources */,
 				25755C6A2B0513BB00B2E0CB /* MockModel.swift in Sources */,
 				25755C702B05176900B2E0CB /* SessionMock.swift in Sources */,
+				25755C732B051A8300B2E0CB /* MealsDataViewModelMock.swift in Sources */,
 				25755C642B04E3CA00B2E0CB /* URlProtocolMock.swift in Sources */,
 				25755C6E2B0516B600B2E0CB /* DessertDetailsViewModelTests.swift in Sources */,
+				25755C752B051ED400B2E0CB /* DessertDetailsViewModelMock.swift in Sources */,
 				25755C622B04E3A600B2E0CB /* MealsDataViewModelTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
