@@ -34,4 +34,6 @@ class MealsDataViewModel: ObservableObject {
         let endPoint = FetchEndPoint.getMeals(dessertType: .dessert)
         return NetworkModel.getURL(for: endPoint)
     }
+    
+ 
 }

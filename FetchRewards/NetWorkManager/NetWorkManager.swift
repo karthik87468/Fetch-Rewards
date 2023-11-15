@@ -10,10 +10,10 @@ import Combine
 class NetworkManager {
     static let shared = NetworkManager()
 
-    private let session: URLSession
+    var session: URLSession
 
-    private init() {
-        session = URLSession.shared
+    init(with session: URLSession = URLSession.shared) {
+        self.session = session
     }
 
     /// Using the Combine publisher
